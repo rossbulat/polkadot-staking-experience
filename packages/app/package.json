@@ -45,7 +45,7 @@
     "qrcode-generator": "1.4.4",
     "rc-slider": "^11.1.6",
     "react-chartjs-2": "^5.2.0",
-    "react-dom": "^18.2.0",
+    "react-dom": "^19.0.0",
     "react-helmet-async": "^2.0.5",
     "react-router-dom": "^7.1.1",
     "rxjs": "^7.8.1",
