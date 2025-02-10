@@ -11,6 +11,7 @@ import { useNetwork } from 'contexts/Network'
 import type { ReactNode } from 'react'
 import { createContext, useContext, useState } from 'react'
 import type { MaybeAddress } from 'types'
+import { planckToUnitBn } from 'utils'
 import { defaultTransferOptionsContext } from './defaults'
 import type { TransferOptions, TransferOptionsContextInterface } from './types'
 import { getLocalFeeReserve, setLocalFeeReserve } from './Utils'
@@ -122,6 +123,34 @@ export const TransferOptionsProvider = ({
     setFeeReserve(amount)
   }
 
+  // Gets staked balance, whether nominating or in pool, for an account
+  const getStakedBalance = (address: MaybeAddress): BigNumber => {
+    const allTransferOptions = getTransferOptions(address)
+
+    // Total funds nominating
+    const nominating = planckToUnitBn(
+      allTransferOptions.nominate.active
+        .plus(allTransferOptions.nominate.totalUnlocking)
+        .plus(allTransferOptions.nominate.totalUnlocked),
+      units
+    )
+
+    // Total funds in pool
+    const inPool = planckToUnitBn(
+      allTransferOptions.pool.active
+        .plus(allTransferOptions.pool.totalUnlocking)
+        .plus(allTransferOptions.pool.totalUnlocked),
+      units
+    )
+
+    // Determine the actual staked balance
+    return !nominating.isZero()
+      ? nominating
+      : !inPool.isZero()
+        ? inPool
+        : new BigNumber(0)
+  }
+
   // Gets a feeReserve from local storage for an account, or the default value otherwise
   const getFeeReserve = (address: MaybeAddress): BigNumber =>
     getLocalFeeReserve(address, defaultFeeReserve, { network, units })
@@ -137,6 +166,7 @@ export const TransferOptionsProvider = ({
     <TransferOptionsContext.Provider
       value={{
         getTransferOptions,
+        getStakedBalance,
         setFeeReserveBalance,
         feeReserve,
         getFeeReserve,

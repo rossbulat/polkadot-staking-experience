@@ -2,5 +2,11 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
 .statGraphic {
-  padding-left: 0.9rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 1.75rem;
+  height: 100%;
 }

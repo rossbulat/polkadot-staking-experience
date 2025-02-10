@@ -2,13 +2,15 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
 .statCard {
+  transition: transform var(--transition-duration);
   display: flex;
   flex-flow: column wrap;
   z-index: 0;
   flex: 1;
   flex-basis: 100%;
   margin-bottom: 1rem;
-  transition: transform var(--transition-duration);
+  position: relative;
+
   &:hover {
     transform: scale(1.02);
   }
@@ -22,13 +24,14 @@
     max-width: 300px;
   }
 
-  > div {
+  > div , > button {
     background: var(--background-primary);
     box-shadow: var(--card-shadow-secondary);
+    border: 1px solid transparent;
     display: flex;
     border-radius: 0.6rem;
     margin-right: 1.25rem;
-    padding: 0.9rem 0rem;
+    padding: 0.75rem 0rem;
     max-height: 5.25rem;
     flex-flow: row wrap;
 
@@ -63,6 +66,20 @@
     @media (max-width: 749px) {
       margin-right: 0;
       padding: 0.9rem 0;
+    }
+  }
+
+  &.button {
+    &:hover {
+      transform: none;
+    }
+  }
+
+  > button {
+    box-shadow: 0 3px 6px var(--card-deep-shadow-color);
+    transition: border 0.1s;
+    &:hover {
+      border: 1px solid var(--accent-color-pending);
     }
   }
 }

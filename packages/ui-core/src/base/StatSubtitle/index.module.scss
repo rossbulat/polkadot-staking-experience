@@ -8,4 +8,7 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  &.primary {
+    color: var(--accent-color-primary);
+  }
 }

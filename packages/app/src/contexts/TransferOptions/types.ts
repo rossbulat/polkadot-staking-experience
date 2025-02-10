@@ -6,6 +6,7 @@ import type { MaybeAddress } from 'types'
 
 export interface TransferOptionsContextInterface {
   getTransferOptions: (a: MaybeAddress) => TransferOptions
+  getStakedBalance: (a: MaybeAddress) => BigNumber
   setFeeReserveBalance: (r: BigNumber) => void
   feeReserve: BigNumber
   getFeeReserve: (address: MaybeAddress) => BigNumber

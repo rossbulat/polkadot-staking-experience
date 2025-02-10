@@ -230,6 +230,23 @@
       "withdrawFunds": "Retirar fondos",
       "withdrawUnlock": "Retira tu fragmento de desvinculación para proceder con el cierre del Pool."
     },
+    "rewards": {
+      "adjustStake": "Ajustar tu Stake",
+      "annual": "Anual",
+      "averageRewardRate": "Tasa de Recompensa",
+      "calculator": "Calculadora",
+      "currentStakedBalance": "Balance Actual en Staking",
+      "customBalance": "Balance Personalizado",
+      "daily": "Diario",
+      "enterStakeAmount": "Ingresa Cantidad",
+      "monthly": "Mensual",
+      "period": "Período",
+      "projectedRewards": "Recompensas Proyectadas",
+      "rewardsCalculator": "Calculadora de Recompensas",
+      "stakePlaceholder": "ej. 100",
+      "useConnectedWallet": "Usar Billetera Conectada",
+      "useCustomAmount": "Usar Cantidad Personalizada"
+    },
     "validators": {
       "activeValidators": "Validadores Activos",
       "allValidators": "Todos los Validadores",

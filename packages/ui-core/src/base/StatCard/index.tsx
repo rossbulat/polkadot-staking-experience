@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
 import type { ComponentBase } from '@w3ux/types'
+import classNames from 'classnames'
 import classes from './index.module.scss'
 
 /**
@@ -13,3 +14,17 @@ export const StatCard = ({ children, style }: ComponentBase) => (
     {children}
   </div>
 )
+
+/**
+ * @name StatButton
+ * @summary Used to house a Stat item as a button within a `StatRow`.
+ */
+export const StatButton = ({ children, style }: ComponentBase) => {
+  const allClasses = classNames(classes.statCard, classes.button)
+
+  return (
+    <div className={allClasses} style={style}>
+      {children}
+    </div>
+  )
+}

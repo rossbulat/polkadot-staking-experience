@@ -7,6 +7,7 @@ import type { TransferOptions, TransferOptionsContextInterface } from './types'
 
 export const defaultTransferOptionsContext: TransferOptionsContextInterface = {
   getTransferOptions: (a) => defaultTransferOptions,
+  getStakedBalance: (a) => new BigNumber(0),
   setFeeReserveBalance: (r) => {},
   feeReserve: new BigNumber(0),
   getFeeReserve: (address) => new BigNumber(0),

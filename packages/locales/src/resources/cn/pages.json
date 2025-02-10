@@ -227,6 +227,23 @@
       "withdrawFunds": "取款",
       "withdrawUnlock": "请取出己解锁金额以继续关闭池"
     },
+    "rewards": {
+      "adjustStake": "调整质押",
+      "annual": "每年",
+      "averageRewardRate": "平均奖励率",
+      "calculator": "计算器",
+      "currentStakedBalance": "当前质押余额",
+      "customBalance": "自定义余额",
+      "daily": "每日",
+      "enterStakeAmount": "输入质押金额",
+      "monthly": "每月",
+      "period": "期间",
+      "projectedRewards": "预计奖励",
+      "rewardsCalculator": "奖励计算器",
+      "stakePlaceholder": "例如 100",
+      "useConnectedWallet": "使用已连接钱包",
+      "useCustomAmount": "使用自定义金额"
+    },
     "validators": {
       "activeValidators": "活跃验证人",
       "allValidators": "所有验证人",

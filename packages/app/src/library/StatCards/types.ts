@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
 import type { TimeLeftFormatted } from '@w3ux/types'
+import type { ReactNode } from 'react'
 
 export interface NumberProps {
   label: string
@@ -40,4 +41,13 @@ export interface TimeleftProps {
   }
   tooltip?: string
   helpKey?: string
+}
+
+export interface ButtonProps {
+  Icon: ReactNode
+  label: string
+  title: string
+  helpKey?: string
+  active: boolean
+  onClick: () => void
 }

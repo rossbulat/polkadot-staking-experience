@@ -230,19 +230,36 @@
       "withdrawFunds": "Withdraw Funds",
       "withdrawUnlock": "Withdraw your unlock chunk to proceed with pool closure."
     },
-    "validators": {
-      "activeValidators": "Active Validators",
-      "allValidators": "All Validators",
-      "averageCommission": "Average Commission",
-      "connecting": "Connecting",
-      "favoriteValidators": "Favorite Validators",
-      "favorites": "Favorites",
-      "fetchingFavoriteValidators": "Fetching favorite validators",
-      "fetchingValidators": "Fetching validators",
-      "networkValidators": "Network Validators",
-      "noFavorites": "No Favorites.",
-      "totalValidators": "Total Validators",
-      "validators": "Validators"
+    "rewards": {
+      "adjustStake": "Adjust Your Stake",
+      "annual": "Annual",
+      "averageRewardRate": "Average Reward Rate",
+      "calculator": "Calculator",
+      "currentStakedBalance": "Current Staked Balance",
+      "customBalance": "Custom Balance",
+      "daily": "Daily",
+      "enterStakeAmount": "Enter Stake Amount",
+      "monthly": "Monthly",
+      "period": "Period",
+      "projectedRewards": "Projected Rewards",
+      "rewardsCalculator": "Rewards Calculator",
+      "stakePlaceholder": "e.g. 100",
+      "useConnectedWallet": "Use Connected Wallet",
+      "useCustomAmount": "Use Custom Amount"
     }
+  },
+  "validators": {
+    "activeValidators": "Active Validators",
+    "allValidators": "All Validators",
+    "averageCommission": "Average Commission",
+    "connecting": "Connecting",
+    "favoriteValidators": "Favorite Validators",
+    "favorites": "Favorites",
+    "fetchingFavoriteValidators": "Fetching favorite validators",
+    "fetchingValidators": "Fetching validators",
+    "networkValidators": "Network Validators",
+    "noFavorites": "No Favorites.",
+    "totalValidators": "Total Validators",
+    "validators": "Validators"
   }
 }
