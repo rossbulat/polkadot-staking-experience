@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/polkadot-cloud/polkadot-staking-dashboard/compare/types-v1.1.0...types-v1.2.0) (2025-02-10)
+
+
+### Features
+
+* Validator performance charts from Staking API ([#2466](https://github.com/polkadot-cloud/polkadot-staking-dashboard/issues/2466)) ([6215f47](https://github.com/polkadot-cloud/polkadot-staking-dashboard/commit/6215f4731505e95bf78ffe826f57918b99e7a6a5))
+* Validator ranks from Staking API, stop historical era point scraping ([#2480](https://github.com/polkadot-cloud/polkadot-staking-dashboard/issues/2480)) ([abe0b1c](https://github.com/polkadot-cloud/polkadot-staking-dashboard/commit/abe0b1c097dc89b60fd2c540fe84f66f69a2b6c4))
+
 ## [1.1.0](https://github.com/polkadot-cloud/polkadot-staking-dashboard/compare/types-v1.0.0...types-v1.1.0) (2025-01-16)
 
 

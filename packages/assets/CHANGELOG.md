@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/polkadot-cloud/polkadot-staking-dashboard/compare/assets-v1.1.0...assets-v1.2.0) (2025-02-10)
+
+
+### Features
+
+* **ux:** Use Cloud icon for favicon & app icon ([#2503](https://github.com/polkadot-cloud/polkadot-staking-dashboard/issues/2503)) ([2324eec](https://github.com/polkadot-cloud/polkadot-staking-dashboard/commit/2324eec09f2cfcd6c986cda6d1364b2bdc173b13))
+
 ## [1.1.0](https://github.com/polkadot-cloud/polkadot-staking-dashboard/compare/assets-v1.0.0...assets-v1.1.0) (2025-01-16)
 
 
