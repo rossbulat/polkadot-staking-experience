@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.2.0](https://github.com/polkadot-cloud/polkadot-staking-dashboard/compare/ui-buttons-v1.1.0...ui-buttons-v1.2.0) (2025-02-10)
+
+
+### Features
+
+* Abstract identity components, use in canvases, easier pool metrics access ([#2479](https://github.com/polkadot-cloud/polkadot-staking-dashboard/issues/2479)) ([3dd021b](https://github.com/polkadot-cloud/polkadot-staking-dashboard/commit/3dd021be779485875b0976cca70ec36bd293b370))
+* **refactor:** Enhance accent colors, unify primary & secondary colors ([#2500](https://github.com/polkadot-cloud/polkadot-staking-dashboard/issues/2500)) ([cd80af7](https://github.com/polkadot-cloud/polkadot-staking-dashboard/commit/cd80af7d2740d5920a2fb088216659a1615aa2ad))
+* **refactor:** Simplify bond buttons, unify "Unstake" term for nominators and pools ([#2467](https://github.com/polkadot-cloud/polkadot-staking-dashboard/issues/2467)) ([90bd894](https://github.com/polkadot-cloud/polkadot-staking-dashboard/commit/90bd894af33ba276f29d50d054dbad5d550c72b0))
+* **ux:** Get theme values directly from CSS, discontinue network colors ([#2501](https://github.com/polkadot-cloud/polkadot-staking-dashboard/issues/2501)) ([b8630d1](https://github.com/polkadot-cloud/polkadot-staking-dashboard/commit/b8630d1291b9e39a83a6cd98eb7da8f5ed128bf2))
+
 ## [1.1.0](https://github.com/polkadot-cloud/polkadot-staking-dashboard/compare/ui-buttons-v1.0.0...ui-buttons-v1.1.0) (2025-01-16)
 
 
